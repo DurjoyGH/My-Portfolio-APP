@@ -1,47 +1,45 @@
-// components/Contact.jsx
-import React, { useState } from 'react';
-import './Contact.css';
+import React, { useState } from "react";
+import "./Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState('');
+  const [submitStatus, setSubmitStatus] = useState("");
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitStatus('');
+    setSubmitStatus("");
 
     try {
-      // Using EmailJS for sending emails
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-        method: 'POST',
+      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        setSubmitStatus('error');
+        setSubmitStatus("error");
       }
     } catch (error) {
-      setSubmitStatus('error');
+      setSubmitStatus("error");
     }
 
     setIsSubmitting(false);
@@ -49,56 +47,56 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: '📧',
-      title: 'Email',
-      value: 'durjoyghosh328@gmail.com',
-      link: 'mailto:durjoyghosh328@gmail.com'
+      icon: "📧",
+      title: "Email",
+      value: "durjoyghosh328@gmail.com",
+      link: "mailto:durjoyghosh328@gmail.com",
     },
     {
-      icon: '📱',
-      title: 'Phone',
-      value: '+880 1859-093806',
-      link: 'tel:+8801859093806'
+      icon: "📱",
+      title: "Phone",
+      value: "+880 1859-093806",
+      link: "tel:+8801859093806",
     },
     {
-      icon: '📍',
-      title: 'Location',
-      value: 'Jashore, Bangladesh',
-      link: null
+      icon: "📍",
+      title: "Location",
+      value: "Jashore, Bangladesh",
+      link: null,
     },
     {
-      icon: '💼',
-      title: 'LinkedIn',
-      value: 'Connect with me',
-      link: 'https://www.linkedin.com/in/durjoy-ghosh-just/'
-    }
+      icon: "💼",
+      title: "LinkedIn",
+      value: "Connect with me",
+      link: "https://www.linkedin.com/in/durjoy-ghosh-just/",
+    },
   ];
 
   const socialLinks = [
     {
-      name: 'GitHub',
-      icon: '💻',
-      url: 'https://github.com/DurjoyGH',
-      color: '#333'
+      name: "GitHub",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      url: "https://github.com/DurjoyGH",
+      color: "#333",
     },
     {
-      name: 'LinkedIn',
-      icon: '💼',
-      url: 'https://www.linkedin.com/in/durjoy-ghosh-just/',
-      color: '#0077b5'
+      name: "LinkedIn",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg",
+      url: "https://www.linkedin.com/in/durjoy-ghosh-just/",
+      color: "#0077b5",
     },
     {
-      name: 'Facebook',
-      icon: '🏆',
-      url: 'https://www.facebook.com/durjoy.ghosh.56/',
-      color: '#1f8dd6'
+      name: "Facebook",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg",
+      url: "https://www.facebook.com/durjoy.ghosh.56/",
+      color: "#1877f2",
     },
     {
-      name: 'X',
-      icon: '👨‍💻',
-      url: 'https://x.com/Durjoy_22',
-      color: '#5b4638'
-    }
+      name: "X",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg",
+      url: "https://x.com/Durjoy_22",
+      color: "#1da1f2",
+    },
   ];
 
   return (
@@ -106,15 +104,16 @@ const Contact = () => {
       <div className="container">
         <h2 className="section-title">Get In Touch</h2>
         <p className="contact-subtitle">
-          Have a project in mind or want to collaborate? I'd love to hear from you!
+          Have a project in mind or want to collaborate? I'd love to hear from
+          you!
         </p>
 
         <div className="contact-content">
           <div className="contact-info fade-in-up">
             <h3>Let's Connect</h3>
             <p>
-              I'm always open to discussing new opportunities, interesting projects, 
-              or just having a chat about technology and development.
+              I'm always open to discussing new opportunities, interesting
+              projects, or just having a chat about technology and development.
             </p>
 
             <div className="contact-details">
@@ -124,7 +123,11 @@ const Contact = () => {
                   <div className="contact-text">
                     <h4>{info.title}</h4>
                     {info.link ? (
-                      <a href={info.link} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={info.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {info.value}
                       </a>
                     ) : (
@@ -145,9 +148,13 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-link"
-                    style={{ '--social-color': social.color }}
+                    style={{ "--social-color": social.color }}
                   >
-                    <span className="social-icon">{social.icon}</span>
+                    <img
+                      src={social.icon}
+                      alt={social.name}
+                      className="social-icon"
+                    />
                     <span className="social-name">{social.name}</span>
                   </a>
                 ))}
@@ -211,7 +218,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className={`submit-btn ${isSubmitting ? 'submitting' : ''}`}
+                className={`submit-btn ${isSubmitting ? "submitting" : ""}`}
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
@@ -220,19 +227,20 @@ const Contact = () => {
                     Sending...
                   </>
                 ) : (
-                  'Send Message'
+                  "Send Message"
                 )}
               </button>
 
-              {submitStatus === 'success' && (
+              {submitStatus === "success" && (
                 <div className="status-message success">
                   ✅ Message sent successfully! I'll get back to you soon.
                 </div>
               )}
 
-              {submitStatus === 'error' && (
+              {submitStatus === "error" && (
                 <div className="status-message error">
-                  ❌ Something went wrong. Please try again or email me directly.
+                  ❌ Something went wrong. Please try again or email me
+                  directly.
                 </div>
               )}
             </form>

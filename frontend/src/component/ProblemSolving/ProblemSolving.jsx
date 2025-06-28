@@ -1,6 +1,5 @@
-// components/ProblemSolving.jsx
-import React from 'react';
-import './ProblemSolving.css';
+import React from "react";
+import "./ProblemSolving.css";
 
 const ProblemSolving = () => {
   const platforms = [
@@ -10,11 +9,11 @@ const ProblemSolving = () => {
       solveCount: 755,
       maxRating: 1214,
       color: "#1f8dd6",
-      icon: "🏆",
+      icon: "https://art.npanuhin.me/SVG/Codeforces/Codeforces.colored.svg",
       profileUrl: "https://codeforces.com/profile/DurjoyGH",
       description: "Competitive Programming Platform",
       rank: "Pupil",
-      gradient: "linear-gradient(135deg, #1f8dd6, #0066cc)"
+      gradient: "linear-gradient(135deg, #1f8dd6, #0066cc)",
     },
     {
       name: "CodeChef",
@@ -22,11 +21,11 @@ const ProblemSolving = () => {
       solveCount: 147,
       maxRating: 1419,
       color: "#1f8dd6",
-      icon: "👨‍💻",
+      icon: "https://cdn.codechef.com/sites/all/themes/abessive/cc-logo.png",
       profileUrl: "https://codechef.com/users/durjoy_gh",
-      description: "Global Programming Community",
+      description: "Competitive Programming Platform",
       rank: "2 Star",
-      gradient: "linear-gradient(135deg, #1f8dd6, #0066cc)"
+      gradient: "linear-gradient(135deg, #1f8dd6, #0066cc)",
     },
     {
       name: "Vjudge",
@@ -34,12 +33,12 @@ const ProblemSolving = () => {
       solveCount: 56,
       maxRating: null,
       color: "#1f8dd6",
-      icon: "⚡",
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJLxdP0idphxUvaRU_FPnvjeUbUC1vMHDJ2g&s",
       profileUrl: "https://vjudge.net/user/Durjoy_24742",
       description: "Virtual Judge Platform",
       rank: "Active Solver",
-      gradient: "linear-gradient(135deg, #1f8dd6, #0066cc)"
-    }
+      gradient: "linear-gradient(135deg, #1f8dd6, #0066cc)",
+    },
   ];
 
   const achievements = [
@@ -47,26 +46,26 @@ const ProblemSolving = () => {
       icon: "🎯",
       title: "Total Problems",
       value: "1000+",
-      description: "Across all platforms"
+      description: "Across all platforms",
     },
     {
       icon: "📈",
       title: "Best Rating",
       value: "1419",
-      description: "CodeChef Maximum"
+      description: "CodeChef Maximum",
     },
     {
       icon: "🔥",
       title: "Active Since",
-      value: "2+ Years",
-      description: "Consistent practice"
+      value: "3+ Years",
+      description: "Consistent practice",
     },
     {
       icon: "💪",
       title: "Skill Level",
       value: "Intermediate",
-      description: "Problem Solver"
-    }
+      description: "Problem Solver",
+    },
   ];
 
   return (
@@ -94,14 +93,18 @@ const ProblemSolving = () => {
           <h3 className="platforms-title">Coding Platforms</h3>
           <div className="platforms-grid">
             {platforms.map((platform, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="platform-card fade-in-up"
-                style={{ '--platform-gradient': platform.gradient }}
+                style={{ "--platform-gradient": platform.gradient }}
               >
                 <div className="platform-header">
                   <div className="platform-logo">
-                    <span className="platform-icon">{platform.icon}</span>
+                    <img
+                      src={platform.icon}
+                      alt={platform.name}
+                      className="platform-icon"
+                    />
                   </div>
                   <div className="platform-info">
                     <h3>{platform.name}</h3>
@@ -113,9 +116,9 @@ const ProblemSolving = () => {
                   <div className="stat-row">
                     <div className="stat-item">
                       <span className="stat-label">Username</span>
-                      <a 
-                        href={platform.profileUrl} 
-                        target="_blank" 
+                      <a
+                        href={platform.profileUrl}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="username-link"
                       >
@@ -123,7 +126,7 @@ const ProblemSolving = () => {
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="stat-row">
                     <div className="stat-item">
                       <span className="stat-label">Problems Solved</span>
@@ -143,9 +146,9 @@ const ProblemSolving = () => {
                 </div>
 
                 <div className="platform-footer">
-                  <a 
-                    href={platform.profileUrl} 
-                    target="_blank" 
+                  <a
+                    href={platform.profileUrl}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="view-profile-btn"
                   >
