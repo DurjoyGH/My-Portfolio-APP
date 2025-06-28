@@ -54,7 +54,7 @@ const Navbar = () => {
 
   const handleResumeDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = "https://drive.google.com/file/d/1ZMb6xAgBNwKbdt6shBoBpg71I30d3baD/view?usp=sharing";
     link.download = "Tarin_Prosad_Ghosh_Resume.pdf";
     document.body.appendChild(link);
     link.click();

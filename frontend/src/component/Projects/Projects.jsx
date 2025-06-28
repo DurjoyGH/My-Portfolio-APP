@@ -111,26 +111,26 @@ const Projects = () => {
       live: "#",
     },
     {
-      title: "CodeSnippet Manager",
+      title: "Easy Tour",
       introduction:
-        "A developer-focused application for organizing, sharing, and discovering code snippets with syntax highlighting and collaborative features for programming teams.",
+        "A user-friendly travel assistance desktop application designed to help users explore and plan journeys between any two districts. It offers detailed insights into destinations, optimized travel planning, and helpful information like hotel availability and weather forecasts along the route.",
       description:
-        "A code snippet management platform where developers can store, organize, and share reusable code snippets with syntax highlighting and search functionality.",
+        "A user-friendly travel assistance desktop application designed to help users explore and plan journeys between any two districts. It offers detailed insights into destinations, optimized travel planning, and helpful information like hotel availability and weather forecasts along the route.",
       features: [
-        "Syntax highlighting for 50+ programming languages",
-        "Advanced search and filtering capabilities",
-        "Team collaboration and snippet sharing",
+        "Select any two districts to view detailed information about both, including key attractions and travel essentials",
+        "Instantly view the shortest distance between selected districts for better travel planning",
+        "Discover available hotels along the route to ensure a comfortable journey and get up-to-date weather information for both selected locations for safe and efficient travel",
       ],
       technologies: [
-        "Vue.js",
+        "Node.js",
         "Express.js",
-        "PostgreSQL",
-        "Prism.js",
-        "Vuetify",
-        "Redis",
+        "React.js",
+        "MongoDB",
+        "Google Map API",
+        "Open Weather API",
       ],
-      github: "https://github.com/your-username/codesnippet-manager",
-      live: "https://codesnippet-manager-demo.com",
+      github: "https://github.com/DurjoyGH/Easy-Tour",
+      live: "#",
     },
   ];
 

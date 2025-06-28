@@ -66,17 +66,10 @@
   align-items: start;
 }
 
-.profile-image {
-  text-align: center;
-  position: sticky;
-  top: 100px;
-  margin-bottom: 2rem;
-}
-
 .profile-img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 5%;
   object-fit: cover;
   border: 4px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);

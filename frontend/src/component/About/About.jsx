@@ -6,7 +6,7 @@ const About = () => {
     { label: "Full Name", value: "Tarin Prosad Ghosh", icon: "👤" },
     { label: "Location", value: "Jashore, Bangladesh", icon: "📍" },
     { label: "Email", value: "durjoyghosh328@gmail.com", icon: "📧" },
-    { label: "Phone", value: "+880 1859093806", icon: "📱" },
+    { label: "Phone", value: "+880 1859-093806", icon: "📱" },
     { label: "Study", value: "Computer Science & Engineering", icon: "🎓" },
     {
       label: "University",
@@ -64,8 +64,8 @@ const About = () => {
   const timeline = [
     {
       year: "2022",
-      title: "Started University",
-      description: "Began Computer Science & Engineering at JUST",
+      title: "Started Journey",
+      description: "Began Computer Science & Engineering at JUST and started competitive programming",
       icon: "🎓",
     },
     {
@@ -76,8 +76,8 @@ const About = () => {
     },
     {
       year: "2024",
-      title: "First Projects",
-      description: "Built Share Reads and Pet Nest applications",
+      title: "First Project",
+      description: "Built Share Reads which is my first large MERN project",
       icon: "🚀",
     },
     {
@@ -99,19 +99,17 @@ const About = () => {
         <div className="about-hero">
           <div className="hero-content fade-in-up">
             <div className="profile-section">
-              <div className="profile-image">
-                <img
-                  src="https://res.cloudinary.com/des0whrgl/image/upload/v1742226737/petnest/profile_pics/6771a11608e9898addd22399.jpg"
-                  alt="Tarin Prosad Ghosh"
-                  className="profile-img"
-                  onError={(e) => {
-                    e.target.style.display = "none";
-                    e.target.nextElementSibling.style.display = "flex";
-                  }}
-                />
-                <div className="avatar">
-                  <span>TPG</span>
-                </div>
+              <img
+                src="https://res.cloudinary.com/des0whrgl/image/upload/v1742226737/petnest/profile_pics/6771a11608e9898addd22399.jpg"
+                alt="Tarin Prosad Ghosh"
+                className="profile-img"
+                onError={(e) => {
+                  e.target.style.display = "none";
+                  e.target.nextElementSibling.style.display = "flex";
+                }}
+              />
+              <div className="avatar">
+                <span>TPG</span>
               </div>
 
               <div className="intro-text">
@@ -120,22 +118,20 @@ const About = () => {
                   <span className="highlight">Tarin Prosad Ghosh</span>
                 </h3>
                 <p className="lead-text">
-                  A passionate Computer Science student and full-stack developer
-                  who loves turning complex problems into simple, beautiful
-                  solutions.
+                  I'm a passionate Computer Science student and full-stack
+                  developer who enjoys turning complex problems into simple,
+                  elegant solutions.
                 </p>
                 <p>
-                  Currently pursuing my degree at Jashore University of Science
-                  and Technology, I specialize in the MERN stack and have a deep
-                  passion for problem solving. I believe in writing clean,
-                  efficient code and creating user experiences that make a
-                  difference.
+                  I’m currently studying at Jashore University of Science and
+                  Technology and specialize in the MERN stack. I love solving
+                  problems, building user-friendly applications, and
+                  continuously learning new technologies.
                 </p>
                 <p>
-                  When I'm not coding, you'll find me solving algorithmic
-                  challenges, exploring new technologies, or contributing to
-                  open-source projects. I'm always eager to learn and take on
-                  new challenges that push my boundaries.
+                  I’m highly dedicated to my work and enjoy collaborating with
+                  others. Teamwork motivates me, and I always give my best to
+                  contribute meaningfully to any project.
                 </p>
               </div>
             </div>

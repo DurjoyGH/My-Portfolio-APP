@@ -38,12 +38,16 @@ const Skills = () => {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
         },
         {
+          name: "React.js",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        {
           name: "Tailwind CSS",
           icon: "https://img.icons8.com/?size=100&id=UpSCHTwpywad&format=png&color=000000",
         },
         {
-          name: "React.js",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          name: "Bootstrap",
+          icon: "https://img.icons8.com/?size=100&id=PndQWK6M1Hjo&format=png&color=000000",
         },
       ],
       categoryIcon: "🎨",
