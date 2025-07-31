@@ -187,39 +187,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        <div className="cta-section fade-in-up">
-          <div className="cta-content">
-            <h3>Let's Work Together</h3>
-            <p>
-              I'm always interested in new opportunities and exciting projects.
-              Whether you have a question or just want to say hi, I'd love to
-              hear from you!
-            </p>
-            <div className="cta-buttons">
-              <button
-                className="cta-btn primary"
-                onClick={() =>
-                  document
-                    .getElementById("contact")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Get In Touch
-              </button>
-              <button
-                className="cta-btn secondary"
-                onClick={() =>
-                  document
-                    .getElementById("projects")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                View My Work
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

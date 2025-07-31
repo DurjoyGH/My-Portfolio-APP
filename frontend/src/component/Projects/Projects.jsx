@@ -52,11 +52,11 @@ const Projects = () => {
     },
 
     {
-      title: "NCCIA",
+      title: "LifeTech",
       introduction:
-        "A conference portal for the National Conference on Computational Intelligence and Applications 2025 (NCCIA-2025), organized by the Department of Computer Science and Engineering at Jashore University of Science and Technology. The portal supports paper submission and a review system.",
+        "A conference portal for the 1st International Conference on Life Science, Health, and Biotechnology (LifeTech 2026), organized by the Faculty of Biological Science and Technology at Jashore University of Science and Technology. The portal supports paper submission and a review system.",
       description:
-        "An online platform designed to streamline the paper submission and review process for NCCIA-2025.",
+        "An online platform designed to streamline the paper submission and review process for LifeTech 2026.",
       features: [
         "Paper submission for the conference",
         "Peer review system for submitted papers",
@@ -71,8 +71,8 @@ const Projects = () => {
         "Cloudinary",
         "Nginx",
       ],
-      github: "https://github.com/DurjoyGH/Conference-Portal-NSCIA-",
-      live: "https://nscia.just.edu.bd/",
+      github: "https://github.com/DurjoyGH/ICLSB",
+      live: "https://iclsb.just.edu.bd/",
     },
     {
       title: "Auto Docs",
@@ -95,7 +95,30 @@ const Projects = () => {
       github: "https://github.com/mdsaniulbasirsaz/AutoDocs-Cse",
       live: "https://auto-docs.onrender.com/",
     },
-    {
+     {
+      title: "NCCIA",
+      introduction:
+        "A conference portal for the National Conference on Computational Intelligence and Applications 2025 (NCCIA-2025), organized by the Department of Computer Science and Engineering at Jashore University of Science and Technology. The portal supports paper submission and a review system.",
+      description:
+        "An online platform designed to streamline the paper submission and review process for NCCIA-2025.",
+      features: [
+        "Paper submission for the conference",
+        "Peer review system for submitted papers",
+        "Well-organized admin dashboard for efficient management",
+      ],
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "React.js",
+        "MongoDB",
+        "JWT",
+        "Cloudinary",
+        "Nginx",
+      ],
+      github: "https://github.com/DurjoyGH/Conference-Portal-NSCIA-",
+      live: "https://nscia.just.edu.bd/",
+    },
+      {
       title: "Study Tracker",
       introduction:
         "An intelligent desktop application designed specifically for students to manage their academic tasks. It offers smart scheduling, date-wise task organization, and progress tracking to help students stay focused and productive.",
@@ -108,28 +131,6 @@ const Projects = () => {
       ],
       technologies: ["JavaFX", "PostgreSQL", "Scene Builder"],
       github: "https://github.com/DurjoyGH/study-tracker",
-      live: "#",
-    },
-    {
-      title: "Easy Tour",
-      introduction:
-        "A user-friendly travel assistance desktop application designed to help users explore and plan journeys between any two districts. It offers detailed insights into destinations, optimized travel planning, and helpful information like hotel availability and weather forecasts along the route.",
-      description:
-        "A user-friendly travel assistance desktop application designed to help users explore and plan journeys between any two districts. It offers detailed insights into destinations, optimized travel planning, and helpful information like hotel availability and weather forecasts along the route.",
-      features: [
-        "Select any two districts to view detailed information about both, including key attractions and travel essentials",
-        "Instantly view the shortest distance between selected districts for better travel planning",
-        "Discover available hotels along the route to ensure a comfortable journey and get up-to-date weather information for both selected locations for safe and efficient travel",
-      ],
-      technologies: [
-        "Node.js",
-        "Express.js",
-        "React.js",
-        "MongoDB",
-        "Google Map API",
-        "Open Weather API",
-      ],
-      github: "https://github.com/DurjoyGH/Easy-Tour",
       live: "#",
     },
   ];

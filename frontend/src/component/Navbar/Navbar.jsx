@@ -45,7 +45,7 @@ const Navbar = () => {
 
   const navItems = [
     { id: "home", label: "Home", icon: "🏠" },
-    { id: "about", label: "About", icon: "👤" },
+    { id: "about", label: "About", icon: "ℹ️" },
     { id: "skills", label: "Skills", icon: "💻" },
     { id: "projects", label: "Projects", icon: "🚀" },
     { id: "problem-solving", label: "Problem Solving", icon: "🏆" },
@@ -54,7 +54,8 @@ const Navbar = () => {
 
   const handleResumeDownload = () => {
     const link = document.createElement("a");
-    link.href = "https://drive.google.com/file/d/1ZMb6xAgBNwKbdt6shBoBpg71I30d3baD/view?usp=sharing";
+    link.href =
+      "https://drive.google.com/file/d/1GjQK8fE1klTveXiQnB6StoMiEvGFmpEQ/view?usp=sharing";
     link.download = "Tarin_Prosad_Ghosh_Resume.pdf";
     document.body.appendChild(link);
     link.click();

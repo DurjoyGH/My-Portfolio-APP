@@ -102,6 +102,10 @@ const Skills = () => {
           name: "VS Code",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
         },
+        {
+          name: "Nginx",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+        },
       ],
       categoryIcon: "🛠️",
       color: "#764ba2",
