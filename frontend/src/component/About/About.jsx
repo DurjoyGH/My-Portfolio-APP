@@ -5,7 +5,7 @@ const About = () => {
   const personalInfo = [
     { label: "Full Name", value: "Tarin Prosad Ghosh", icon: "👤" },
     { label: "Location", value: "Jashore, Bangladesh", icon: "📍" },
-    { label: "Email", value: "durjoyghosh328@gmail.com", icon: "📧" },
+    { label: "Email", value: "tarinprosadghosh@gmail.com", icon: "📧" },
     { label: "Phone", value: "+880 1859-093806", icon: "📱" },
     { label: "Study", value: "Computer Science & Engineering", icon: "🎓" },
     {
@@ -100,7 +100,7 @@ const About = () => {
           <div className="hero-content fade-in-up">
             <div className="profile-section">
               <img
-                src="https://res.cloudinary.com/des0whrgl/image/upload/v1742226737/petnest/profile_pics/6771a11608e9898addd22399.jpg"
+                src="https://res.cloudinary.com/des0whrgl/image/upload/v1763421535/durjoy_vwke5y.jpg"
                 alt="Tarin Prosad Ghosh"
                 className="profile-img"
                 onError={(e) => {

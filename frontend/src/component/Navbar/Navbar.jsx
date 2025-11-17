@@ -55,7 +55,7 @@ const Navbar = () => {
   const handleResumeDownload = () => {
     const link = document.createElement("a");
     link.href =
-      "https://drive.google.com/file/d/1I8jAE3SzOPEwUGbY-Qz1RCGwijBO8YAL/view?usp=sharing";
+      "https://drive.google.com/file/d/1Km8z8rAaMwvxBaI9mvdIgLpxmmbTwu6Z/view?usp=sharing";
     link.download = "Tarin_Prosad_Ghosh_Resume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -69,7 +69,7 @@ const Navbar = () => {
           <div className="logo" onClick={() => scrollToSection("home")}>
             <div className="logo-icon">
               <img
-                src="https://res.cloudinary.com/des0whrgl/image/upload/v1742226737/petnest/profile_pics/6771a11608e9898addd22399.jpg"
+                src="https://res.cloudinary.com/des0whrgl/image/upload/v1763421535/durjoy_vwke5y.jpg"
                 alt="Tarin Prosad Ghosh"
                 className="logo-image"
                 onError={(e) => {

@@ -44,7 +44,7 @@ const Home = () => {
             <h2 className="typing-animation">
               <span className="role">MERN Stack Developer</span>
               <span className="role">Problem Solver</span>
-              <span className="role">Undergraduate Student</span>
+              <span className="role">AI/ML Explorer</span>
             </h2>
             <p className="description">
               Welcome to my digital portfolio! I'm passionate about creating
@@ -91,7 +91,7 @@ const Home = () => {
                 <div className="card-glow"></div>
                 <div className="profile-image-wrapper">
                   <img
-                    src="https://res.cloudinary.com/des0whrgl/image/upload/v1742226737/petnest/profile_pics/6771a11608e9898addd22399.jpg"
+                    src="https://res.cloudinary.com/des0whrgl/image/upload/v1763421535/durjoy_vwke5y.jpg"
                     alt="Tarin Prosad Ghosh"
                     className="profile-image"
                     onError={(e) => {
