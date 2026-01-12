@@ -4,30 +4,67 @@ import "./Projects.css";
 const Projects = () => {
   const projects = [
     {
-      title: "Share Reads",
+      title: "LifeTech",
+      image: "/projects/life-tech.png",
+      projectType: "Live Project",
+      role: "Full Stack",
       introduction:
-        "A comprehensive book sharing platform that connects book lovers in a community-driven environment for sharing, borrowing, and discovering new reads.",
+        "A conference portal for the 1st International Conference on Life Science, Health, and Biotechnology (LifeTech 2026), organized by the Faculty of Biological Science and Technology at Jashore University of Science and Technology. The portal supports paper submission and a review system.",
       description:
-        "A book sharing platform where users can add books, request to borrow from others, and review books. Features notification system for book owners.",
+        "An online platform designed to streamline the paper submission and review process for LifeTech 2026.",
       features: [
-        "Users can list books they own and are willing to lend or give away. Listings include book details, condition, and availability",
-        "Request and approve borrow/lend operations with a transparent tracking system for due dates and status updates",
-        "Get alerts for borrow requests, return deadlines, new messages, and wishlist availability",
+        "Paper submission for the conference",
+        "Peer review system for submitted papers",
+        "Well-organized admin dashboard for efficient management",
       ],
       technologies: [
         "Node.js",
         "Express.js",
-        "EJS",
-        "Bootstrap",
+        "React.js",
         "MongoDB",
-        "Passport.js",
-        "Firebase",
+        "Firebase Authentication",
+        "Cloudinary",
+        "Nginx",
+        "Docker",
+        "GitHub CI/CD"
       ],
-      github: "https://github.com/DurjoyGH/Share-Reads-WebAPP",
-      live: "https://share-reads.onrender.com/",
+      github: "https://github.com/DurjoyGH/ICLSB",
+      live: "https://iclsb.just.edu.bd/",
+    },
+    {
+      title: "AutoCP",
+      image: "/projects/auto-cp.png",
+      projectType: "Team Project",
+      role: "Backend",
+      introduction:
+        "An AI-based platform for creating competitive programming problems with automated testcase generation and validation using advanced language models.",
+      description:
+        "AI-powered platform that generates high-quality competitive programming problems with comprehensive testcases and automatic validation through multiple models.",
+      features: [
+        "Generate high-quality competitive programming problems using advanced AI models",
+        "Automatically create comprehensive testcases with base, edge, and large cases covered",
+        "Automatic testcase validation by multiple models using Gemini API",
+        "LLM Fine-Tuning with Codeforces API Dataset and Hugging Face Hosting",
+      ],
+      technologies: [
+        "Python",
+        "Node.js",
+        "Express.js",
+        "React.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "JWT",
+        "Gemini API",
+        "Hugging Face"
+      ],
+      github: "https://github.com/DurjoyGH/AutoCP",
+      live: "https://auto-cp.vercel.app/",
     },
     {
       title: "Pet Nest",
+      image: "/projects/pet-nest.png",
+      projectType: "Team Project",
+      role: "Backend",
       introduction:
         "A modern e-commerce solution designed specifically for pet owners, offering a complete marketplace for pet products and professional veterinary services.",
       description:
@@ -50,13 +87,66 @@ const Projects = () => {
       github: "https://github.com/DurjoyGH/PetNest",
       live: "https://petnest-frontend.onrender.com/",
     },
-
     {
-      title: "LifeTech",
+      title: "Share Reads",
+      image: "/projects/share-reads.png",
+      projectType: "Team Project",
+      role: "Backend",
       introduction:
-        "A conference portal for the 1st International Conference on Life Science, Health, and Biotechnology (LifeTech 2026), organized by the Faculty of Biological Science and Technology at Jashore University of Science and Technology. The portal supports paper submission and a review system.",
+        "A comprehensive book sharing platform that connects book lovers in a community-driven environment for sharing, borrowing, and discovering new reads.",
       description:
-        "An online platform designed to streamline the paper submission and review process for LifeTech 2026.",
+        "A book sharing platform where users can add books, request to borrow from others, and review books. Features notification system for book owners.",
+      features: [
+        "Users can list books they own and are willing to lend or give away. Listings include book details, condition, and availability",
+        "Request and approve borrow/lend operations with a transparent tracking system for due dates and status updates",
+        "Get alerts for borrow requests, return deadlines, new messages, and wishlist availability",
+      ],
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "EJS",
+        "Bootstrap",
+        "MongoDB",
+        "Passport.js",
+        "Firebase",
+      ],
+      github: "https://github.com/DurjoyGH/Share-Reads-WebAPP",
+      live: "https://share-reads-web-app-psi.vercel.app/",
+    },
+    {
+      title: "AutoCard",
+      image: "/projects/auto-card.png",
+      projectType: "Single Project",
+      role: "Full Stack",
+      introduction:
+        "A modern digital library card management system that streamlines the application, approval, and renewal process for library members.",
+      description:
+        "An online library card management system with real-time status tracking, instant digital card generation, and secure authentication for seamless library system integration.",
+      features: [
+        "Online application system for library cards with real-time status tracking",
+        "Instant digital card generation upon approval with seamless library system integration",
+        "Intuitive user interface with secure authentication for managing and renewing cards",
+      ],
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "React.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "JWT",
+      ],
+      github: "https://github.com/DurjoyGH/AutoCard",
+      live: "https://auto-card.onrender.com",
+    },
+    {
+      title: "ETSD",
+      image: "/projects/etsd.png",
+      projectType: "Live Project",
+      role: "Full Stack",
+      introduction:
+        "An international conference portal for the Engineering and Technology for Sustainable Development - 2026 (ETSD-2026), organized by the Faculty of Engineering and Technology, Jashore University of Science and Technology. The portal supports paper submission and a review system.",
+      description:
+        "An online platform designed to streamline the paper submission and review process for ETSD-2026.",
       features: [
         "Paper submission for the conference",
         "Peer review system for submitted papers",
@@ -70,12 +160,17 @@ const Projects = () => {
         "JWT",
         "Cloudinary",
         "Nginx",
+        "Docker",
+        "GitHub CI/CD"
       ],
-      github: "https://github.com/DurjoyGH/ICLSB",
-      live: "https://iclsb.just.edu.bd/",
+      github: "https://github.com/DurjoyGH/ICETSD",
+      live: "https://icetsd.just.edu.bd/",
     },
     {
       title: "Auto Docs",
+      image: "/projects/auto-docs.png",
+      projectType: "Team Project",
+      role: "Frontend",
       introduction:
         "A digital platform that enables users to efficiently request and receive university documents, eliminating long wait times and paperwork hassles.",
       description:
@@ -91,35 +186,42 @@ const Projects = () => {
         "Tailwind CSS",
         "Redux",
         "Cloudinary",
+        "JWT"
       ],
       github: "https://github.com/mdsaniulbasirsaz/AutoDocs-Cse",
       live: "https://auto-docs.onrender.com/",
     },
-     {
-      title: "NCCIA",
+    {
+      title: "Smart Mirror",
+      image: "/projects/smart-mirror.jpeg",
+      projectType: "Team Project",
+      role: "Backend",
       introduction:
-        "A conference portal for the National Conference on Computational Intelligence and Applications 2025 (NCCIA-2025), organized by the Department of Computer Science and Engineering at Jashore University of Science and Technology. The portal supports paper submission and a review system.",
+        "An IoT-based smart mirror featuring facial recognition and personalized task management to enhance daily routines with intelligent automation.",
       description:
-        "An online platform designed to streamline the paper submission and review process for NCCIA-2025.",
+        "A Raspberry Pi-powered smart mirror with facial recognition system that displays personalized daily tasks and essential information like time, date, and weather.",
       features: [
-        "Paper submission for the conference",
-        "Peer review system for submitted papers",
-        "Well-organized admin dashboard for efficient management",
+        "Facial recognition system using Pi Camera to identify users and display personalized daily tasks",
+        "Integration with Todoist API to fetch and display user's task list in real-time",
+        "Always-on display showing time, date, and location-based temperature information",
       ],
       technologies: [
-        "Node.js",
-        "Express.js",
-        "React.js",
-        "MongoDB",
-        "JWT",
-        "Cloudinary",
-        "Nginx",
+        "Raspberry Pi",
+        "Pi Camera",
+        "Pi Display",
+        "Python",
+        "OpenCV",
+        "MagicMirror",
+        "Todoist API",
       ],
-      github: "https://github.com/DurjoyGH/Conference-Portal-NSCIA-",
-      live: "https://nscia.just.edu.bd/",
+      github: "#",
+      live: "#",
     },
-      {
+    {
       title: "Study Tracker",
+      image: "/projects/study-tracker.png",
+      projectType: "Team Project",
+      role: "Full Stack",
       introduction:
         "An intelligent desktop application designed specifically for students to manage their academic tasks. It offers smart scheduling, date-wise task organization, and progress tracking to help students stay focused and productive.",
       description:
@@ -129,11 +231,20 @@ const Projects = () => {
         "Easily view and organize tasks based on due dates to prioritize your academic workload effectively",
         "Optimized as a lightweight desktop application for smooth offline usage and distraction-free productivity",
       ],
-      technologies: ["JavaFX", "PostgreSQL", "Scene Builder"],
+      technologies: ["JavaFX", "CockroachDB", "Scene Builder"],
       github: "https://github.com/DurjoyGH/study-tracker",
       live: "#",
     },
   ];
+
+  // Calculate project statistics
+  const teamProjects = projects.filter(p => p.projectType === "Team Project").length;
+  const liveProjects = projects.filter(p => p.projectType === "Live Project").length;
+  const singleProjects = projects.filter(p => p.projectType === "Single Project").length;
+  
+  const fullStackRoles = projects.filter(p => p.role === "Full Stack").length;
+  const backendRoles = projects.filter(p => p.role === "Backend").length;
+  const frontendRoles = projects.filter(p => p.role === "Frontend").length;
 
   return (
     <section id="projects" className="section">
@@ -142,11 +253,57 @@ const Projects = () => {
         <p className="section-subtitle">
           A showcase of my development journey and technical expertise
         </p>
+
+        <div className="project-summary">
+          <div className="summary-section">
+            <h4>Project Types</h4>
+            <div className="summary-stats">
+              <div className="stat-item">
+                <span className="stat-number">{teamProjects}</span>
+                <span className="stat-label">Team Projects</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">{liveProjects}</span>
+                <span className="stat-label">Live Projects</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">{singleProjects}</span>
+                <span className="stat-label">Single Projects</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="summary-section">
+            <h4>Role Distribution</h4>
+            <div className="summary-stats">
+              <div className="stat-item">
+                <span className="stat-number">{fullStackRoles}</span>
+                <span className="stat-label">Full Stack</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">{backendRoles}</span>
+                <span className="stat-label">Backend</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">{frontendRoles}</span>
+                <span className="stat-label">Frontend</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card fade-in-up">
+              <div className="project-image">
+                <img src={project.image} alt={project.title} />
+              </div>
               <div className="project-content">
                 <h3>{project.title}</h3>
+                <div className="project-meta">
+                  <span className="project-type">{project.projectType}</span>
+                  <span className="project-role">{project.role}</span>
+                </div>
                 <p className="project-introduction">{project.introduction}</p>
 
                 <div className="project-features">

@@ -43,8 +43,8 @@ const Home = () => {
             </h1>
             <h2 className="typing-animation">
               <span className="role">MERN Stack Developer</span>
+              <span className="role">Competitive Programmer</span>
               <span className="role">Problem Solver</span>
-              <span className="role">AI/ML Explorer</span>
             </h2>
             <p className="description">
               Welcome to my digital portfolio! I'm passionate about creating

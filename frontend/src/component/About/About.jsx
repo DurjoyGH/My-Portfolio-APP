@@ -63,25 +63,25 @@ const About = () => {
 
   const timeline = [
     {
-      year: "2022",
+      year: "2021-December",
       title: "Started Journey",
       description: "Began Computer Science & Engineering at JUST and started competitive programming",
       icon: "🎓",
     },
     {
-      year: "2023",
+      year: "2023-February",
       title: "Web Development",
       description: "Started learning MERN stack development",
       icon: "💻",
     },
     {
-      year: "2024",
+      year: "2023-October",
       title: "First Project",
       description: "Built Share Reads which is my first large MERN project",
       icon: "🚀",
     },
     {
-      year: "2025",
+      year: "2024-2026",
       title: "Continue Journey",
       description: "Still learning and continue my journey",
       icon: "✨",
@@ -123,8 +123,8 @@ const About = () => {
                   elegant solutions.
                 </p>
                 <p>
-                  I’m currently studying at Jashore University of Science and
-                  Technology and specialize in the MERN stack. I love solving
+                  I’m a recent graduate from Jashore University of Science and
+                  Technology and specialize in the MERN Stack. I love solving
                   problems, building user-friendly applications, and
                   continuously learning new technologies.
                 </p>

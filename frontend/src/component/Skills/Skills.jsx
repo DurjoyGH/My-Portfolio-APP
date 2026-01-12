@@ -15,6 +15,10 @@ const Skills = () => {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
         },
         {
+          name: "Python",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        },
+        {
           name: "Java",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
         },
@@ -42,6 +46,10 @@ const Skills = () => {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         },
         {
+          name: "Next.js",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        },
+        {
           name: "Tailwind CSS",
           icon: "https://img.icons8.com/?size=100&id=UpSCHTwpywad&format=png&color=000000",
         },
@@ -49,9 +57,13 @@ const Skills = () => {
           name: "Bootstrap",
           icon: "https://img.icons8.com/?size=100&id=PndQWK6M1Hjo&format=png&color=000000",
         },
+        {
+          name: "EJS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+        },
       ],
       categoryIcon: "🎨",
-      color: "#764ba2",
+      color: "#667eea",
     },
     {
       title: "Backend Development",
@@ -66,29 +78,29 @@ const Skills = () => {
         },
       ],
       categoryIcon: "⚙️",
-      color: "#764ba2",
+      color: "#ffeaa7",
     },
     {
       title: "Database Management",
       skills: [
         {
-          name: "SQL",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-        },
-        {
-          name: "Firebase",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-        },
-        {
           name: "MongoDB",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
         },
+        {
+          name: "MySQL",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+        },
+        {
+          name: "PostgreSQL",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        },
       ],
       categoryIcon: "🗄️",
-      color: "#764ba2",
+      color: "#fab1a0",
     },
     {
-      title: "Development Tools",
+      title: "Tools & Technologies",
       skills: [
         {
           name: "Git",
@@ -99,16 +111,47 @@ const Skills = () => {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
         },
         {
-          name: "VS Code",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+          name: "Prisma",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
+        },
+        {
+          name: "JWT",
+          icon: "https://img.icons8.com/?size=100&id=rHpveptSuwDz&format=png&color=000000",
+        },
+        {
+          name: "Cloudinary",
+          icon: "https://img.icons8.com/?size=100&id=D85IezTsXQ6f&format=png&color=000000",
+        },
+        {
+          name: "Firebase",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+        },
+      ],
+      categoryIcon: "🛠️",
+      color: "#fd79a8",
+    },
+    {
+      title: "Familiar With",
+      skills: [
+        {
+          name: "AWS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
         },
         {
           name: "Nginx",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
         },
+        {
+          name: "Docker",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        },
+        {
+          name: "GitHub CI/CD",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        },
       ],
-      categoryIcon: "🛠️",
-      color: "#764ba2",
+      categoryIcon: "🔧",
+      color: "#a29bfe",
     },
     {
       title: "Core Concepts",
@@ -127,7 +170,30 @@ const Skills = () => {
         },
       ],
       categoryIcon: "🧠",
-      color: "#764ba2",
+      color: "#00b894",
+    },
+    {
+      title: "Soft Skills",
+      skills: [
+        {
+          name: "Problem Solving",
+          icon: "https://img.icons8.com/?size=100&id=85331&format=png&color=000000",
+        },
+        {
+          name: "Communication",
+          icon: "https://img.icons8.com/?size=100&id=87&format=png&color=000000",
+        },
+        {
+          name: "Teamwork",
+          icon: "https://img.icons8.com/?size=100&id=40217&format=png&color=000000",
+        },
+        {
+          name: "Adaptability",
+          icon: "https://img.icons8.com/?size=100&id=OVPhQxY0gHpo&format=png&color=000000",
+        },
+      ],
+      categoryIcon: "🤝",
+      color: "#6c5ce7",
     },
   ];
 
