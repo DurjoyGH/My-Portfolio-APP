@@ -139,6 +139,32 @@ const Projects = () => {
       live: "https://auto-card.onrender.com",
     },
     {
+      title: "Perceptron-13",
+      image: "/projects/perceptron-13.png",
+      projectType: "Team Project",
+      role: "Frontend",
+      introduction:
+        "An industrial tour management platform for the Computer Science and Engineering Department at Jashore University of Science and Technology, managing a 9-day tour to Cox's Bazar, Saint Martin's Island, and industrial visits.",
+      description:
+        "A comprehensive tour management system enabling students and faculty to create profiles, share tour experiences, and access real-time tour logistics including schedules, bus/ship/room allocations, with complete admin control panel.",
+      features: [
+        "Students and faculty can create and manage profiles, upload tour pictures, and share insights about the tour for others to see",
+        "Real-time access to tour schedules, bus allocation, ship allocation, and room allocation for all participants",
+        "Complete admin management system to update tour schedules, manage allocations, track tour expenses, upload day-wise photos to gallery, and send email updates to all participants",
+      ],
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "React.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "JWT",
+        "Cloudinary",
+      ],
+      github: "https://github.com/DurjoyGH/Perceptron-13",
+      live: "https://www.perceptron13.fun",
+    },
+    {
       title: "ETSD",
       image: "/projects/etsd.png",
       projectType: "Live Project",

@@ -7,33 +7,81 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-
+    let timeoutId = null;
+    let ticking = false;
+    
+    const updateActiveSection = () => {
       const sections = [
         "home",
         "about",
         "skills",
         "projects",
         "problem-solving",
+        "achievements",
         "contact",
       ];
-      const currentSection = sections.find((section) => {
+      
+      // Find which section is currently being viewed
+      let currentSection = "home";
+      let minDistance = Infinity;
+      
+      // Loop through sections and find the one that's currently most visible
+      sections.forEach((section) => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
+          const navbarHeight = 100;
+          
+          // Check if section is in viewport
+          if (rect.top <= navbarHeight + 50 && rect.bottom >= navbarHeight) {
+            // Calculate how much of the section is visible below the navbar
+            const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, navbarHeight);
+            const distance = Math.abs(rect.top - navbarHeight);
+            
+            // Prioritize sections that are more visible
+            if (visibleHeight > 100 && distance < minDistance) {
+              minDistance = distance;
+              currentSection = section;
+            }
+          }
         }
-        return false;
       });
 
-      if (currentSection) {
-        setActiveSection(currentSection);
+      setActiveSection(currentSection);
+      ticking = false;
+    };
+    
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+
+      // Clear existing timeout
+      if (timeoutId) {
+        clearTimeout(timeoutId);
       }
+
+      // Use requestAnimationFrame for smooth updates during scroll
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          ticking = false;
+        });
+        ticking = true;
+      }
+
+      // Debounce the active section update - only update when scrolling slows/stops
+      timeoutId = setTimeout(() => {
+        updateActiveSection();
+      }, 100);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    updateActiveSection(); // Call once on mount
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
   }, []);
 
   const scrollToSection = (sectionId) => {
@@ -49,6 +97,7 @@ const Navbar = () => {
     { id: "skills", label: "Skills", icon: "💻" },
     { id: "projects", label: "Projects", icon: "🚀" },
     { id: "problem-solving", label: "Problem Solving", icon: "🏆" },
+    { id: "achievements", label: "Achievements", icon: "🎖️" },
     { id: "contact", label: "Contact", icon: "📧" },
   ];
 

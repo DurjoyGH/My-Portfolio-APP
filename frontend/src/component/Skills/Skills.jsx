@@ -28,7 +28,7 @@ const Skills = () => {
         },
       ],
       categoryIcon: "💻",
-      color: "#764ba2",
+      color: "#fab1a0",
     },
     {
       title: "Frontend Development",
@@ -63,7 +63,7 @@ const Skills = () => {
         },
       ],
       categoryIcon: "🎨",
-      color: "#667eea",
+      color: "#fab1a0",
     },
     {
       title: "Backend Development",
@@ -78,7 +78,7 @@ const Skills = () => {
         },
       ],
       categoryIcon: "⚙️",
-      color: "#ffeaa7",
+      color: "#fab1a0",
     },
     {
       title: "Database Management",
@@ -128,7 +128,7 @@ const Skills = () => {
         },
       ],
       categoryIcon: "🛠️",
-      color: "#fd79a8",
+      color: "#fab1a0",
     },
     {
       title: "Familiar With",
@@ -151,7 +151,7 @@ const Skills = () => {
         },
       ],
       categoryIcon: "🔧",
-      color: "#a29bfe",
+      color: "#fab1a0",
     },
     {
       title: "Core Concepts",
@@ -170,7 +170,7 @@ const Skills = () => {
         },
       ],
       categoryIcon: "🧠",
-      color: "#00b894",
+      color: "#fab1a0",
     },
     {
       title: "Soft Skills",
@@ -193,7 +193,7 @@ const Skills = () => {
         },
       ],
       categoryIcon: "🤝",
-      color: "#6c5ce7",
+      color: "#fab1a0",
     },
   ];
 

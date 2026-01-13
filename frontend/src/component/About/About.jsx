@@ -149,7 +149,6 @@ const About = () => {
               >
                 <div className="highlight-icon">{highlight.icon}</div>
                 <h4>{highlight.title}</h4>
-                <p>{highlight.description}</p>
               </div>
             ))}
           </div>

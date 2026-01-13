@@ -26,7 +26,7 @@
   pointer-events: none;
 }
 
-.container {
+.problem-solving-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -34,7 +34,7 @@
   z-index: 1;
 }
 
-.section-title {
+.problem-solving-section-title {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
@@ -45,7 +45,7 @@
   background-clip: text;
 }
 
-.section-subtitle {
+.problem-solving-section-subtitle {
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 4rem;
@@ -55,14 +55,110 @@
   margin-right: auto;
 }
 
-.achievements-grid {
+/* ICPC Section Styles */
+.problem-solving-icpc-section {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.problem-solving-icpc-card {
+  background: rgba(255, 234, 167, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 234, 167, 0.3);
+  padding: 2.5rem;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.problem-solving-icpc-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffeaa7, #fdcb6e, #ffeaa7);
+}
+
+.problem-solving-icpc-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 234, 167, 0.2);
+  border-color: rgba(255, 234, 167, 0.5);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.problem-solving-icpc-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.problem-solving-icpc-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffeaa7;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.problem-solving-icpc-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.problem-solving-icpc-certificate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.9rem 2rem;
+  background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
+  border-radius: 30px;
+  color: #2d3436;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 234, 167, 0.4);
+  border: 2px solid transparent;
+}
+
+.problem-solving-icpc-certificate-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 234, 167, 0.6);
+  background: linear-gradient(135deg, #fdcb6e, #ffeaa7);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.problem-solving-certificate-icon {
+  font-size: 1.3rem;
+}
+
+.problem-solving-achievements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-bottom: 4rem;
 }
 
-.achievement-card {
+.problem-solving-achievement-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 15px;
@@ -72,41 +168,41 @@
   transition: all 0.3s ease;
 }
 
-.achievement-card:hover {
+.problem-solving-achievement-card:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.achievement-icon {
+.problem-solving-achievement-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   display: block;
 }
 
-.achievement-content h3 {
+.problem-solving-achievement-content h3 {
   font-size: 2rem;
   font-weight: 700;
   color: #ffeaa7;
   margin-bottom: 0.5rem;
 }
 
-.achievement-content h4 {
+.problem-solving-achievement-content h4 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-.achievement-content p {
+.problem-solving-achievement-content p {
   font-size: 0.9rem;
   opacity: 0.8;
 }
 
-.platforms-container {
+.problem-solving-platforms-container {
   margin-top: 3rem;
 }
 
-.platforms-title {
+.problem-solving-platforms-title {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
@@ -114,13 +210,13 @@
   color: #ffeaa7;
 }
 
-.platforms-grid {
+.problem-solving-platforms-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
 }
 
-.platform-card {
+.problem-solving-platform-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 20px;
@@ -130,7 +226,7 @@
   position: relative;
 }
 
-.platform-card::before {
+.problem-solving-platform-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -140,20 +236,20 @@
   background: var(--platform-gradient);
 }
 
-.platform-card:hover {
+.problem-solving-platform-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   background: rgba(255, 255, 255, 0.15);
 }
 
-.platform-header {
+.problem-solving-platform-header {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 2rem 2rem 1rem;
 }
 
-.platform-logo {
+.problem-solving-platform-logo {
   width: 60px;
   height: 60px;
   background: var(--platform-gradient);
@@ -164,39 +260,39 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.platform-icon {
+.problem-solving-platform-icon {
   font-size: 2rem;
   color: white;
 }
 
-.platform-info h3 {
+.problem-solving-platform-info h3 {
   font-size: 1.5rem;
   font-weight: 700;
   color: #ffeaa7;
   margin-bottom: 0.3rem;
 }
 
-.platform-info p {
+.problem-solving-platform-info p {
   font-size: 0.9rem;
   opacity: 0.8;
 }
 
-.platform-stats {
+.problem-solving-platform-stats {
   padding: 0 2rem 1rem;
 }
 
-.stat-row {
+.problem-solving-stat-row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
   gap: 1rem;
 }
 
-.stat-item {
+.problem-solving-stat-item {
   flex: 1;
 }
 
-.stat-label {
+.problem-solving-stat-label {
   display: block;
   font-size: 0.8rem;
   font-weight: 500;
@@ -206,14 +302,14 @@
   margin-bottom: 0.3rem;
 }
 
-.stat-value {
+.problem-solving-stat-value {
   display: block;
   font-size: 1.2rem;
   font-weight: 700;
   color: #ffeaa7;
 }
 
-.username-link {
+.problem-solving-username-link {
   display: block;
   font-size: 1.1rem;
   font-weight: 600;
@@ -222,12 +318,12 @@
   transition: all 0.3s ease;
 }
 
-.username-link:hover {
+.problem-solving-username-link:hover {
   color: #0984e3;
   text-decoration: underline;
 }
 
-.rank-badge {
+.problem-solving-rank-badge {
   background: var(--platform-gradient);
   color: white;
   padding: 0.5rem 1rem;
@@ -239,11 +335,11 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.platform-footer {
+.problem-solving-platform-footer {
   padding: 1rem 2rem 2rem;
 }
 
-.view-profile-btn {
+.problem-solving-view-profile-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,26 +355,26 @@
   transition: all 0.3s ease;
 }
 
-.view-profile-btn:hover {
+.problem-solving-view-profile-btn:hover {
   background: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-2px);
 }
 
-.arrow {
+.problem-solving-arrow {
   font-size: 1.2rem;
   transition: transform 0.3s ease;
 }
 
-.view-profile-btn:hover .arrow {
+.problem-solving-view-profile-btn:hover .problem-solving-arrow {
   transform: translateX(5px);
 }
 
-.fade-in-up {
-  animation: fadeInUp 0.8s ease-out;
+.problem-solving-fade-in-up {
+  animation: problemSolvingFadeInUp 0.8s ease-out;
 }
 
-@keyframes fadeInUp {
+@keyframes problemSolvingFadeInUp {
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -289,30 +385,30 @@
   }
 }
 
-.achievement-card:nth-child(1) {
+.problem-solving-achievement-card:nth-child(1) {
   animation-delay: 0.1s;
 }
-.achievement-card:nth-child(2) {
+.problem-solving-achievement-card:nth-child(2) {
   animation-delay: 0.2s;
 }
-.achievement-card:nth-child(3) {
+.problem-solving-achievement-card:nth-child(3) {
   animation-delay: 0.3s;
 }
-.achievement-card:nth-child(4) {
+.problem-solving-achievement-card:nth-child(4) {
   animation-delay: 0.4s;
 }
 
-.platform-card:nth-child(1) {
+.problem-solving-platform-card:nth-child(1) {
   animation-delay: 0.1s;
 }
-.platform-card:nth-child(2) {
+.problem-solving-platform-card:nth-child(2) {
   animation-delay: 0.2s;
 }
-.platform-card:nth-child(3) {
+.problem-solving-platform-card:nth-child(3) {
   animation-delay: 0.3s;
 }
 
-.platform-icon {
+.problem-solving-platform-icon {
   width: 50px;
   height: 50px;
   object-fit: contain;
@@ -320,7 +416,7 @@
   transition: all 0.3s ease;
 }
 
-.platform-logo {
+.problem-solving-platform-logo {
   width: 60px;
   height: 60px;
   border-radius: 15px;
@@ -332,57 +428,94 @@
 }
 
 @media (max-width: 768px) {
-  .achievements-grid {
+  .problem-solving-achievements-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 
-  .platforms-grid {
+  .problem-solving-platforms-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
-  .platform-header {
+  .problem-solving-platform-header {
     padding: 1.5rem 1.5rem 1rem;
   }
 
-  .platform-stats {
+  .problem-solving-platform-stats {
     padding: 0 1.5rem 1rem;
   }
 
-  .platform-footer {
+  .problem-solving-platform-footer {
     padding: 1rem 1.5rem 1.5rem;
   }
 
-  .stat-row {
+  .problem-solving-stat-row {
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  .section-title {
+  .problem-solving-section-title {
     font-size: 2.5rem;
+  }
+
+  .problem-solving-icpc-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .problem-solving-icpc-icon {
+    font-size: 3rem;
+  }
+
+  .problem-solving-icpc-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .problem-solving-icpc-description {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .achievements-grid {
+  .problem-solving-achievements-grid {
     grid-template-columns: 1fr;
   }
 
-  .achievement-card {
+  .problem-solving-achievement-card {
     padding: 1rem;
   }
 
-  .platform-logo {
+  .problem-solving-platform-logo {
     width: 50px;
     height: 50px;
   }
 
-  .platform-icon {
+  .problem-solving-platform-icon {
     font-size: 1.5rem;
   }
 
-  .platform-info h3 {
+  .problem-solving-platform-info h3 {
     font-size: 1.3rem;
+  }
+
+  .problem-solving-icpc-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .problem-solving-icpc-icon {
+    font-size: 2.5rem;
+  }
+
+  .problem-solving-icpc-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .problem-solving-icpc-description {
+    font-size: 0.95rem;
+  }
+
+  .problem-solving-icpc-certificate-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
   }
 }

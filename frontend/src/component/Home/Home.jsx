@@ -91,9 +91,13 @@ const Home = () => {
                 <div className="card-glow"></div>
                 <div className="profile-image-wrapper">
                   <img
-                    src="https://res.cloudinary.com/des0whrgl/image/upload/v1763421535/durjoy_vwke5y.jpg"
+                    src="/me.png"
                     alt="Tarin Prosad Ghosh"
                     className="profile-image"
+                    loading="eager"
+                    onLoad={(e) => {
+                      e.target.style.display = "block";
+                    }}
                     onError={(e) => {
                       e.target.style.display = "none";
                       e.target.nextElementSibling.style.display = "flex";

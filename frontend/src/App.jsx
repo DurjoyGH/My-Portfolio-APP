@@ -8,6 +8,7 @@ import Projects from './component/Projects/Projects';
 import ProblemSolving from './component/ProblemSolving/ProblemSolving';
 import About from './component/About/About';
 import Contact from './component/Contact/Contact';
+import Achievements from './component/Achievements/Achievements';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <Projects />
       <ProblemSolving />
+      <Achievements />
       <Contact />
     </div>
   );

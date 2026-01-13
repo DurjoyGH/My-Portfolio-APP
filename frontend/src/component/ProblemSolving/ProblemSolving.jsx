@@ -70,17 +70,39 @@ const ProblemSolving = () => {
 
   return (
     <section id="problem-solving" className="problem-solving-section">
-      <div className="container">
-        <h2 className="section-title">Problem Solving Journey</h2>
-        <p className="section-subtitle">
+      <div className="problem-solving-container">
+        <h2 className="problem-solving-section-title">Problem Solving Journey</h2>
+        <p className="problem-solving-section-subtitle">
           My competitive programming achievements across various platforms
         </p>
 
-        <div className="achievements-grid">
+        {/* ICPC Achievement */}
+        <div className="problem-solving-icpc-section">
+          <div className="problem-solving-icpc-card">
+            <div className="problem-solving-icpc-icon">🏆</div>
+            <div className="problem-solving-icpc-content">
+              <h3>ICPC Dhaka Regional Preliminary Contest</h3>
+              <p className="problem-solving-icpc-description">
+                Participated in the ACM ICPC Dhaka Regional Preliminary Contest in 2021, 2022, and 2023
+              </p>
+              <a
+                href="https://drive.google.com/file/d/1JqoYyZ3VIYy4G5pw-g-jHve-BVL4hqLG/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="problem-solving-icpc-certificate-btn"
+              >
+                <span className="problem-solving-certificate-icon">📜</span>
+                View Certificates
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="problem-solving-achievements-grid">
           {achievements.map((achievement, index) => (
-            <div key={index} className="achievement-card fade-in-up">
-              <div className="achievement-icon">{achievement.icon}</div>
-              <div className="achievement-content">
+            <div key={index} className="problem-solving-achievement-card problem-solving-fade-in-up">
+              <div className="problem-solving-achievement-icon">{achievement.icon}</div>
+              <div className="problem-solving-achievement-content">
                 <h3>{achievement.value}</h3>
                 <h4>{achievement.title}</h4>
                 <p>{achievement.description}</p>
@@ -89,71 +111,71 @@ const ProblemSolving = () => {
           ))}
         </div>
 
-        <div className="platforms-container">
-          <h3 className="platforms-title">Coding Platforms</h3>
-          <div className="platforms-grid">
+        <div className="problem-solving-platforms-container">
+          <h3 className="problem-solving-platforms-title">Coding Platforms</h3>
+          <div className="problem-solving-platforms-grid">
             {platforms.map((platform, index) => (
               <div
                 key={index}
-                className="platform-card fade-in-up"
+                className="problem-solving-platform-card problem-solving-fade-in-up"
                 style={{ "--platform-gradient": platform.gradient }}
               >
-                <div className="platform-header">
-                  <div className="platform-logo">
+                <div className="problem-solving-platform-header">
+                  <div className="problem-solving-platform-logo">
                     <img
                       src={platform.icon}
                       alt={platform.name}
-                      className="platform-icon"
+                      className="problem-solving-platform-icon"
                     />
                   </div>
-                  <div className="platform-info">
+                  <div className="problem-solving-platform-info">
                     <h3>{platform.name}</h3>
                     <p>{platform.description}</p>
                   </div>
                 </div>
 
-                <div className="platform-stats">
-                  <div className="stat-row">
-                    <div className="stat-item">
-                      <span className="stat-label">Username</span>
+                <div className="problem-solving-platform-stats">
+                  <div className="problem-solving-stat-row">
+                    <div className="problem-solving-stat-item">
+                      <span className="problem-solving-stat-label">Username</span>
                       <a
                         href={platform.profileUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="username-link"
+                        className="problem-solving-username-link"
                       >
                         @{platform.username}
                       </a>
                     </div>
                   </div>
 
-                  <div className="stat-row">
-                    <div className="stat-item">
-                      <span className="stat-label">Problems Solved</span>
-                      <span className="stat-value">{platform.solveCount}</span>
+                  <div className="problem-solving-stat-row">
+                    <div className="problem-solving-stat-item">
+                      <span className="problem-solving-stat-label">Problems Solved</span>
+                      <span className="problem-solving-stat-value">{platform.solveCount}</span>
                     </div>
                     {platform.maxRating && (
-                      <div className="stat-item">
-                        <span className="stat-label">Max Rating</span>
-                        <span className="stat-value">{platform.maxRating}</span>
+                      <div className="problem-solving-stat-item">
+                        <span className="problem-solving-stat-label">Max Rating</span>
+                        <span className="problem-solving-stat-value">{platform.maxRating}</span>
                       </div>
                     )}
                   </div>
 
-                  <div className="rank-badge">
+                  <div className="problem-solving-rank-badge">
                     <span>{platform.rank}</span>
                   </div>
                 </div>
 
-                <div className="platform-footer">
+                <div className="problem-solving-platform-footer">
                   <a
                     href={platform.profileUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="view-profile-btn"
+                    className="problem-solving-view-profile-btn"
                   >
                     View Profile
-                    <span className="arrow">→</span>
+                    <span className="problem-solving-arrow">→</span>
                   </a>
                 </div>
               </div>
