@@ -7,7 +7,6 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
-    let timeoutId = null;
     let ticking = false;
     
     const updateActiveSection = () => {
@@ -30,7 +29,7 @@ const Navbar = () => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          const navbarHeight = 100;
+          const navbarHeight = 80;
           
           // Check if section is in viewport
           if (rect.top <= navbarHeight + 50 && rect.bottom >= navbarHeight) {
@@ -54,23 +53,13 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      // Clear existing timeout
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-
-      // Use requestAnimationFrame for smooth updates during scroll
+      // Use requestAnimationFrame for immediate smooth updates during scroll
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          ticking = false;
+          updateActiveSection();
         });
         ticking = true;
       }
-
-      // Debounce the active section update - only update when scrolling slows/stops
-      timeoutId = setTimeout(() => {
-        updateActiveSection();
-      }, 100);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -78,9 +67,6 @@ const Navbar = () => {
     
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
     };
   }, []);
 
